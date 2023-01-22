@@ -34,7 +34,7 @@
         </StackPanel>
 
         <StackPanel Grid.Row="1"
-                    Grid.Column="2"
+                    Grid.ColumnSpan="2"
                     Orientation="Horizontal"
                     HorizontalAlignment="Center">
             <Button x:Name="btnOsszead" Width="50" Content="+" Click="btnOsszead_Click"></Button>
