@@ -27,26 +27,23 @@ namespace HaziFeladat
 
 		private void btnOsszead_Click(object sender, RoutedEventArgs e)
 		{
-			String eredmeny = $"{txtAszam.Text}+{txtBszam.Text} =";
-			double szam = Convert.ToDouble(txtAszam.Text) + Convert.ToDouble(txtBszam.Text);
-			MessageBox.Show("Az összeadás eredménye:"+eredmeny + szam );
-			lbEredmenyek.Items.Add(eredmeny + szam);
+			String eredmeny = $"{txtAszam.Text}+{txtBszam.Text} = {Convert.ToDouble(txtAszam.Text) + Convert.ToDouble(txtBszam.Text)}";
+			MessageBox.Show("Az összeadás eredménye:"+eredmeny);
+			lbEredmenyek.Items.Add(eredmeny);
 		}
 
 		private void btnKivon_Click(object sender, RoutedEventArgs e)
 		{
-			String eredmeny = $"{txtAszam.Text}-{txtBszam.Text} =";
-			double szam = Convert.ToDouble(txtAszam.Text) - Convert.ToDouble(txtBszam.Text);
-			MessageBox.Show("Az kivonás eredménye:" + eredmeny + szam);
-			lbEredmenyek.Items.Add(eredmeny + szam);
+			String eredmeny = $"{txtAszam.Text}-{txtBszam.Text} =  {Convert.ToDouble(txtAszam.Text) - Convert.ToDouble(txtBszam.Text)}";
+			MessageBox.Show("Az kivonás eredménye:" + eredmeny);
+			lbEredmenyek.Items.Add(eredmeny);
 		}
 
 		private void btnSzoroz_Click(object sender, RoutedEventArgs e)
 		{
-			String eredmeny = $"{txtAszam.Text}*{txtBszam.Text} =";
-			double szam = Convert.ToDouble(txtAszam.Text) * Convert.ToDouble(txtBszam.Text);
-			MessageBox.Show("Az szorzás eredménye:" + eredmeny + szam );
-			lbEredmenyek.Items.Add(eredmeny + szam);
+			String eredmeny = $"{txtAszam.Text}*{txtBszam.Text} = {Convert.ToDouble(txtAszam.Text) * Convert.ToDouble(txtBszam.Text)}";
+			MessageBox.Show("Az szorzás eredménye:" + eredmeny);
+			lbEredmenyek.Items.Add(eredmeny);
 		}
 
 		private void btnOszt_Click(object sender, RoutedEventArgs e)
@@ -57,10 +54,9 @@ namespace HaziFeladat
 			}
 			else
 			{
-				String eredmeny = $"{txtAszam.Text}/{txtBszam.Text} =";
-				double szam = Convert.ToDouble(txtAszam.Text) / Convert.ToDouble(txtBszam.Text);
-				MessageBox.Show("Az osztás eredménye:" + eredmeny + szam);
-				lbEredmenyek.Items.Add(eredmeny + szam);
+				String eredmeny = $"{txtAszam.Text}/{txtBszam.Text} = {Convert.ToDouble(txtAszam.Text) / Convert.ToDouble(txtBszam.Text)}";
+				MessageBox.Show("Az osztás eredménye:" + eredmeny);
+				lbEredmenyek.Items.Add(eredmeny);
 			}
 		}
 	}
